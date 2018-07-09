@@ -1,0 +1,28 @@
+{
+  "name": "@osjs/ace-application",
+  "version": "1.0.0",
+  "osjs": {
+    "type": "package"
+  },
+  "dependencies": {
+    "@osjs/common": "^3.0.0-alpha.9",
+    "@osjs/gui": "^3.0.0-alpha.20",
+    "brace": "^0.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-ace-application.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-ace-application/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-ace-application#readme"
+}

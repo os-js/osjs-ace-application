@@ -1,0 +1,19 @@
+{
+  "name": "AceEditor",
+  "category": "development",
+  "icon": "icon.png",
+  "title": {
+    "en_EN": "Ace Editor"
+  },
+  "description": {
+    "en_EN": "Ace Editor"
+  },
+  "mimes": [
+    "^text\/(.*)",
+    "application\/json",
+    "application\/javascript"
+  ],
+  "files": [
+    "index.js"
+  ]
+}
