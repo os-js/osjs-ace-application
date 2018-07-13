@@ -90,7 +90,7 @@ const createApplication = (core, proc, win, $content) => {
 
     save: () => state => {
       if (proc.args.file) {
-        vfs.writefile(proc.args.file.path, getText());
+        vfs.writefile(proc.args.file, getText());
       }
     },
 
@@ -98,7 +98,7 @@ const createApplication = (core, proc, win, $content) => {
       const mode = modelist.getModeForPath(item.path);
       editor.getSession().setMode(mode.mode);
 
-      vfs.readfile(item.path)
+      vfs.readfile(item)
         .then(setText)
         .catch(error => console.error(error)); // FIXME: Dialog
     },
