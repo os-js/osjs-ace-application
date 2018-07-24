@@ -12,3 +12,11 @@
 # OS.js v3 Ace Editor Package
 
 This is the Ace Editor Package for OS.js v3
+
+## Installation
+
+```bash
+npm install --save @osjs/ace-application
+npm run package:discover
+npm run build:manifest
+```
