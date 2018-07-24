@@ -1,6 +1,6 @@
 {
   "name": "@osjs/ace-application",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "osjs": {
     "type": "package"
   },
