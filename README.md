@@ -18,5 +18,4 @@ This is the Ace Editor Package for OS.js v3
 ```bash
 npm install --save @osjs/ace-application
 npm run package:discover
-npm run build:manifest
 ```
