@@ -11,7 +11,7 @@
     "eslint": "eslint *.js",
     "build": "webpack",
     "watch": "webpack --watch",
-    "prepublishOnly": "npm run eslint && rm ./dist/* && npm run build"
+    "prepublishOnly": "NODE_ENV=production npm run eslint && rm ./dist/* && npm run build"
   },
   "repository": {
     "type": "git",
