@@ -13,6 +13,8 @@
 
 This is the Ace Editor Package for OS.js v3
 
+![Screenshot](https://raw.githubusercontent.com/os-js/osjs-ace-application/master/screenshot.png)
+
 ## Installation
 
 ```bash
