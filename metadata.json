@@ -3,10 +3,12 @@
   "category": "development",
   "icon": "icon.png",
   "title": {
-    "en_EN": "Ace Editor"
+    "en_EN": "Ace Editor",
+    "fr_FR": "Éditeur de texte Ace"
   },
   "description": {
-    "en_EN": "Ace Editor"
+    "en_EN": "Ace Editor",
+    "fr_FR": "Éditeur de texte Ace"
   },
   "mimes": [
     "^text\/(.*)",
