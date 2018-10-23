@@ -4,10 +4,12 @@
   "icon": "icon.png",
   "title": {
     "en_EN": "Ace Editor",
+    "nb_NO": "Ace Editor",
     "fr_FR": "Éditeur de texte Ace"
   },
   "description": {
     "en_EN": "Ace Editor",
+    "nb_NO": "Ace er en teksteditor med fokus på programmering",
     "fr_FR": "Éditeur de texte Ace"
   },
   "mimes": [
