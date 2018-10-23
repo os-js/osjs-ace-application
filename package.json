@@ -1,7 +1,7 @@
 {
   "name": "@osjs/ace-application",
   "description": "OS.js v3 Ace Editor Application",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "osjs": {
     "type": "package"
   },
@@ -35,6 +35,7 @@
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/runtime": "^7.1.2",
+    "@osjs/common": "^3.0.0-alpha.23",
     "@osjs/gui": "^3.0.0-alpha.35",
     "babel-loader": "^8.0.4",
     "brace": "^0.11.1",
