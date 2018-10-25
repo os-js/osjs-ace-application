@@ -170,6 +170,14 @@ const createApplication = (core, proc, win, $content) => {
   win.on('resized', () => editor.resize());
   win.on('blur', () => editor.blur());
   win.on('focus', () => editor.focus());
+  win.on('drop', (ev, data) => {
+    if (data.isFile && data.mime) {
+      const found = proc.metadata.mimes.find(m => (new RegExp(m)).test(data.mime));
+      if (found) {
+        basic.open(data);
+      }
+    }
+  });
   basic.on('new-file', () => setText(''));
   basic.on('save-file', ha.save);
   basic.on('open-file', ha.load);
