@@ -37,7 +37,7 @@ import 'brace/mode/html';
 import 'brace/ext/modelist';
 import 'brace/ext/themelist';
 import {h, app} from 'hyperapp';
-import {Box, BoxContainer, Menubar, MenubarItem, Statusbar} from '@osjs/gui';
+import {Box, BoxContainer, Menubar, MenubarItem, Statusbar} from '@osjs/gui/index.js';
 import {BasicApplication} from '@osjs/common';
 
 const createFileMenu = (current, actions) => ([
