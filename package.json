@@ -1,7 +1,7 @@
 {
   "name": "@osjs/ace-application",
   "description": "OS.js v3 Ace Editor Application",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "osjs": {
     "type": "package"
   },
