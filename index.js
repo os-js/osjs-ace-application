@@ -37,8 +37,7 @@ import 'brace/mode/html';
 import 'brace/ext/modelist';
 import 'brace/ext/themelist';
 import {h, app} from 'hyperapp';
-import {Box, BoxContainer, Menubar, MenubarItem, Statusbar} from '@osjs/gui/index.js';
-import {BasicApplication} from '@osjs/common';
+import {Box, BoxContainer, Menubar, MenubarItem, Statusbar} from '@osjs/gui';
 
 const createFileMenu = (current, actions) => ([
   {label: 'New', onclick: () => actions.menuNew()},
@@ -69,7 +68,7 @@ const createApplication = (core, proc, win, $content) => {
   const getText = () => editor.getValue();
 
   // BasicApplication
-  const basic = new BasicApplication(core, proc, win, {
+  const basic = core.make('osjs/basic-application', proc, win, {
     defaultFilename: 'New File.txt'
   });
 
