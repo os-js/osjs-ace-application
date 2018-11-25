@@ -15,7 +15,22 @@
   "mimes": [
     "^text\/(.*)",
     "application\/json",
-    "application\/javascript"
+    "application\/java",
+    "application\/javascript",
+    "application\/postscript",
+    "application\/ecmascript",
+    "application\/x-httpd-php-source",
+    "application\/x-httpd-php",
+    "application\/x-php",
+    "application\/x-lua",
+    "application\/x-python",
+    "application\/x-python-code",
+    "application\/x-python-code",
+    "application\/x-java-class",
+    "application\/x-javascript",
+    "application\/x-lisp",
+    "application\/x-bsh",
+    "application\/x-sh"
   ],
   "files": [
     "main.js"
