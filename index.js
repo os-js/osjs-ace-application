@@ -39,12 +39,12 @@ import 'brace/ext/themelist';
 import {h, app} from 'hyperapp';
 import {Box, BoxContainer, Menubar, MenubarItem, Statusbar} from '@osjs/gui';
 
-const createFileMenu = (current, actions) => ([
-  {label: 'New', onclick: () => actions.menuNew()},
-  {label: 'Open', onclick: () => actions.menuOpen()},
-  {label: 'Save', disabled: !current, onclick: () => actions.menuSave()},
-  {label: 'Save As...', onclick: () => actions.menuSaveAs()},
-  {label: 'Quit', onclick: () => actions.menuQuit()}
+const createFileMenu = (current, actions, _) => ([
+  {label: _('LBL_NEW'), onclick: () => actions.menuNew()},
+  {label: _('LBL_OPEN'), onclick: () => actions.menuOpen()},
+  {label: _('LBL_SAVE'), disabled: !current, onclick: () => actions.menuSave()},
+  {label: _('LBL_SAVEAS'), onclick: () => actions.menuSaveAs()},
+  {label: _('LBL_QUIT'), onclick: () => actions.menuQuit()}
 ]);
 
 const createThemeMenu = (themes, current, actions) => themes.map(theme => ({
@@ -61,6 +61,7 @@ const createModeMenu = (modes, current, actions) => modes.map(mode => ({
 const createApplication = (core, proc, win, $content) => {
   let editor;
   const vfs = core.make('osjs/vfs');
+  const _ = core.make('osjs/locale').translate;
   const modelist = ace.acequire('ace/ext/modelist');
   const themelist = ace.acequire('ace/ext/themelist');
 
@@ -105,7 +106,7 @@ const createApplication = (core, proc, win, $content) => {
     fileMenu: ev => (state, actions) => {
       core.make('osjs/contextmenu').show({
         position: ev.target,
-        menu: createFileMenu(proc.args.file, actions)
+        menu: createFileMenu(proc.args.file, actions, _)
       });
     },
 
@@ -133,7 +134,7 @@ const createApplication = (core, proc, win, $content) => {
       h(Menubar, {}, [
         h(MenubarItem, {
           onclick: ev => actions.fileMenu(ev)
-        }, 'File')
+        }, _('LBL_FILE'))
         /*
         h(MenubarItem, {
           onclick: ev => actions.themeMenu(ev)
