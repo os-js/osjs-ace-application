@@ -38,6 +38,8 @@ import 'brace/ext/modelist';
 import 'brace/ext/themelist';
 import {h, app} from 'hyperapp';
 import {Box, BoxContainer, Menubar, MenubarItem, Statusbar} from '@osjs/gui';
+import osjs from 'osjs';
+import {name as applicationName} from './metadata.json';
 
 const createFileMenu = (current, actions, _) => ([
   {label: _('LBL_NEW'), onclick: () => actions.menuNew()},
@@ -201,4 +203,4 @@ const createProcess = (core, args, options, metadata) => {
   return proc;
 };
 
-OSjs.make('osjs/packages').register('AceEditor', createProcess);
+osjs.register(applicationName, createProcess);
