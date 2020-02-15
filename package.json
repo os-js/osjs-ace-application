@@ -5,7 +5,6 @@
   "osjs": {
     "type": "package"
   },
-  "dependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint *.js",
@@ -30,20 +29,13 @@
     "url": "https://github.com/os-js/osjs-ace-application/issues"
   },
   "homepage": "https://github.com/os-js/osjs-ace-application#readme",
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-transform-runtime": "^7.2.0",
-    "@babel/preset-env": "^7.2.3",
-    "@babel/runtime": "^7.2.0",
-    "@osjs/eslint-config": "^1.0.0",
+  "dependencies": {
     "@osjs/gui": "^4.0.20",
-    "babel-loader": "^8.0.5",
     "brace": "^0.11.1",
-    "copy-webpack-plugin": "^4.6.0",
-    "eslint": "^5.12.0",
-    "hyperapp": "^1.2.9",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0"
+    "hyperapp": "^1.2.9"
+  },
+  "devDependencies": {
+    "@osjs/dev-meta": "^1.0.1"
   },
   "eslintConfig": {
     "env": {
@@ -57,8 +49,10 @@
   },
   "babel": {
     "presets": [
-      ["@babel/preset-env", {
-      }]
+      [
+        "@babel/preset-env",
+        {}
+      ]
     ],
     "plugins": [
       "@babel/plugin-transform-runtime"
