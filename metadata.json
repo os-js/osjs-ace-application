@@ -5,12 +5,14 @@
   "title": {
     "en_EN": "Ace Editor",
     "nb_NO": "Ace Editor",
-    "fr_FR": "Éditeur de texte Ace"
+    "fr_FR": "Éditeur de texte Ace",
+    "pt_BR": "Editor Ace"
   },
   "description": {
     "en_EN": "Ace Editor",
     "nb_NO": "Ace er en teksteditor med fokus på programmering",
-    "fr_FR": "Éditeur de texte Ace"
+    "fr_FR": "Éditeur de texte Ace",
+    "pt_BR": "Editor de texto Ace"
   },
   "mimes": [
     "^text\/(.*)",
